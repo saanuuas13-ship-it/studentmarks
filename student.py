@@ -1,6 +1,4 @@
 
-import sys
-
 def calculate_grade(marks):
     if marks >= 90:
         return "A"
@@ -16,15 +14,14 @@ def calculate_grade(marks):
 
 def display_result(name, marks):
     grade = calculate_grade(marks)
-    print("Student:", name)
+
+    print("Student Name:", name)
     print("Marks:", marks)
     print("Grade:", grade)
 
 
-name = input("Enter student name: ")
-marks = int(input("Enter marks: "))
-
-if name == "":
-    name = "Student"
+# Fixed test data for Jenkins
+name = "Sanika"
+marks = 89
 
 display_result(name, marks)
